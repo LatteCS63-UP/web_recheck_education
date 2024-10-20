@@ -1,0 +1,21 @@
+.Sidebar {
+    min-width: 270px;
+    padding: .5rem;
+    box-sizing: border-box;
+
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.35);
+    background-color: #fff;
+    z-index: 3;
+
+    transition: min-width 1s;
+}
+
+.Sidebar.active {
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .Sidebar {
+        display: none;
+    }
+}

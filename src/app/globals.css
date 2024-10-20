@@ -1,27 +1,52 @@
-@tailwind base;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Cagliostro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cagliostro&family=Dongle:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joti+One&display=swap");
+
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* TODO: Main color template */
+  /* ? 60% */
+  --Main-color-1: #674e85;
+
+  /* ? 30% */
+  --Secondary-color-1: #7e6fb0;
+
+  /* ? 10% */
+  --Accent-color-1: #3a478d;
+  --Accent-color-2: #4a68be;
+  --Accent-color-3: #7398df;
+
+  /* TODO: Neutral */
+  --D_black: #1d1d1f;
+  --D_white: #fbfbfd;
+
+  /* TODO: Text */
+  --D_Gray: #525252;
+  --M_Gray: #a3a3a3;
+  --L_Gray: #f5f5f5;
+
+  /* TODO: Status color */
+  --Warning-color: #f8a01e;
+  --Warning-text-color: #944b00;
+
+  --Success-color: #64d579;
+  --Success-text-color: #238933;
+
+  --Danger-color: #fd6262;
+  --Danger-text-color: #c12724;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* @layer base {
+    html {
+        font-family: 'Noto Sans Thai', sans-serif;
+    }
+  } */
